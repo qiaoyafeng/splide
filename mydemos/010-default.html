@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Splide demo</title>
+  <!-- Link Splide's CSS -->
+  <link rel="stylesheet" href="../dist/css/splide.min.css">
+
+  <!-- Demo styles -->
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!-- Splide  -->
+	<div id="image-slider" class="splide">
+		<div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide">
+					<img src="images/image01.jpg">
+				</li>
+				<li class="splide__slide">
+					<img src="images/image02.jpg">
+				</li>
+				<li class="splide__slide">
+					<img src="images/image03.jpg">
+				</li>
+			</ul>
+		</div>
+	</div>
+
+  <!-- Splide JS -->
+  <script src="../dist/js/splide.min.js"></script>
+
+  <!-- Initialize Splide -->
+	<script>
+		document.addEventListener( 'DOMContentLoaded', function () {
+			new Splide( '#image-slider' ).mount();
+		} );
+	</script>
+
+
+</body>
+
+</html>
